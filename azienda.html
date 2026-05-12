@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="it" id="HR" class="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Azienda — La storia di SiderOXY dal 1981 | Cesena</title>
+<meta name="description" content="45 anni di specializzazione nella lavorazione lamiera. Da piccola officina a centro Hardox autorizzato SSAB con 22.000 m² di stabilimenti a Pievesestina di Cesena.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<!-- Leaflet for stabilimenti map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="has-page-hero">
+<!-- ════════════════ SHARED NAV — keep in sync across pages ════════════════ -->
+<nav id="nav">
+  <div class="nl">
+    <a class="nav-brand" href="index.html" aria-label="SiderOXY Home">
+      <img src="assets/img/logo-sideroxy.svg" alt="SiderOXY" loading="eager" decoding="sync" width="178" height="26">
+    </a>
+  </div>
+  <ul class="ni">
+    <li><a href="azienda.html" data-it>Azienda</a><a href="azienda.html" data-en>Company</a></li>
+    <li><a href="lavorazioni.html" data-it>Lavorazioni</a><a href="lavorazioni.html" data-en>Services</a></li>
+    <li><a href="macchine.html" data-it>Macchine</a><a href="macchine.html" data-en>Machines</a></li>
+    <li><a href="materiali.html" data-it>Materiali</a><a href="materiali.html" data-en>Materials</a></li>
+    <li><a href="qualita.html" data-it>Qualità</a><a href="qualita.html" data-en>Quality</a></li>
+    <li><a href="portfolio.html" data-it>Portfolio</a><a href="portfolio.html" data-en>Portfolio</a></li>
+    <li><a href="contatti.html" data-it>Contatti</a><a href="contatti.html" data-en>Contacts</a></li>
+  </ul>
+  <div class="nr">
+    <div class="lng">
+      <button class="lo a" id="btn-it" onclick="setLang('it')">IT</button>
+      <button class="lo" id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+    <a class="nc" href="contatti.html#preventivo"><span data-it>Preventivo</span><span data-en>Get Quote</span></a>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- FAB -->
+<div class="fab">
+  <a class="fbb fbm" href="contatti.html#preventivo" style="text-decoration:none;display:grid;place-items:center;color:inherit"><div class="fbt" data-it>Preventivo rapido</div><div class="fbt" data-en>Quick quote</div>✉</a>
+  <a class="fbb fbw" href="https://wa.me/390547317272" target="_blank" rel="noopener" style="text-decoration:none;display:grid;place-items:center;color:inherit"><div class="fbt">WhatsApp</div>💬</a>
+  <a class="fbb fbp" href="tel:+390547317272" style="text-decoration:none;display:grid;place-items:center;color:inherit"><div class="fbt">0547 317272</div>📞</a>
+</div>
+
+<!-- HARDOX BADGE -->
+<a class="hxb" href="materiali.html#hardox">
+  <div class="hxbt"><strong data-it>Centro Hardox Autorizzato SSAB</strong><strong data-en>SSAB Authorized Hardox Center</strong><span data-it>Certificato dal 2017 · acciai antiusura</span><span data-en>Certified since 2017 · wear steels</span></div>
+  <div class="hxbb"><div class="hxbs"></div><div class="hxbi"><div><div class="hxblt">Har<span>dox</span></div><div class="hxblb">Wearparts · SSAB</div></div><div class="hxbsep"></div><div class="hxbr"><div class="hxbrl" data-it>Autorizzato</div><div class="hxbrl" data-en>Authorized</div><div class="hxbrn">SiderOXY</div><div class="hxbry" data-it>dal 2017</div><div class="hxbry" data-en>since 2017</div></div><div class="hxbd"></div></div></div>
+</a>
+
+<!-- ═══ PAGE HERO ═══ -->
+<section class="page-hero" data-page="azienda">
+  <video class="page-hero-bg" autoplay muted loop playsinline preload="metadata" poster="">
+    <!-- <source src="assets/video/hero-azienda.mp4" type="video/mp4"> -->
+  </video>
+  <div class="page-hero-fallback" aria-hidden="true"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-grain"></div>
+  <div class="page-hero-inner">
+    <div class="page-hero-tag rv" data-it>La nostra storia</div>
+    <div class="page-hero-tag rv" data-en>Our history</div>
+    <h1 class="page-hero-h rv d1"><span data-it>AZIENDA</span><span data-en>COMPANY</span></h1></div>
+  <div class="page-hero-scroll"><span data-it>Scorri</span><span data-en>Scroll</span><i></i></div>
+</section>
+
+<!-- Intro block — generic supporting text + media slot -->
+<section class="intro-block">
+  <div class="intro-block-inner">
+    <div class="intro-block-content rv">
+      <div class="stag" data-it>La nostra storia</div><div class="stag" data-en>Our history</div>
+      <h2><span data-it>Specialisti<br><span class="r">dal 1981.</span></span><span data-en>Specialists<br><span class="r">since 1981.</span></span></h2>
+      <p data-it>Questa sezione può ospitare immagini e video dello stabilimento, del lavoro quotidiano e dei reparti per raccontare la storia di SiderOXY.</p>
+      <p data-en>This section can host images and videos of the facility, daily work and departments to tell the SiderOXY story.</p>
+    </div>
+    <div class="rv d2">
+      <div class="media-slot">
+        <div class="media-slot-inner">
+          <div class="media-slot-icon">⬡</div>
+          <div class="media-slot-lbl" data-it>Foto stabilimento</div>
+          <div class="media-slot-lbl" data-en>Facility photo</div>
+          <div class="media-slot-sub" data-it>Spazio per foto aerea o vista esterna</div>
+          <div class="media-slot-sub" data-en>Aerial or exterior view placeholder</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chi" id="azienda">
+  <div class="stag rv" data-it>La nostra storia</div><div class="stag rv" data-en>Our history</div>
+  <h2 class="sh rv d1"><span data-it>Chi siamo.<br><span class="r">Da dove veniamo.</span></span><span data-en>Who we are.<br><span class="r">Where we come from.</span></span></h2>
+  <div class="chi-g">
+    <div class="rv">
+      <div class="chi-yr">1981</div>
+      <p class="chi-ld" data-it>SiderOXY nasce nel <strong>1981 a Pievesestina di Cesena</strong>, al servizio di realtà locali con piccole lavorazioni di <strong>ossitaglio, cesoiatura e piegatura</strong>. I rapidi mutamenti tecnologici hanno determinato la necessità di dotarsi di attrezzature sempre più aggiornate che, unite all'esperienza acquisita, ci hanno portato ad essere un punto di riferimento nel settore.</p>
+      <p class="chi-ld" data-en>SiderOXY was founded in <strong>1981 in Pievesestina di Cesena</strong>, serving local businesses with small-scale <strong>oxycutting, shearing and bending</strong> operations. Rapid technological change drove the need for ever more advanced equipment which, combined with the experience we have built up, has made us a benchmark in the sector.</p>
+      <div class="chi-q" data-it>"Specialisti nella lavorazione lamiera dal 1981."</div>
+      <div class="chi-q" data-en>"Sheet metal processing specialists since 1981."</div>
+      <p class="chi-b" data-it>Operiamo su una superficie di <strong>22.000 m² di cui 9.000 coperti</strong>, distribuita su <strong>due stabilimenti</strong> di Pievesestina di Cesena. Tre reparti integrati — taglio termico, piega, calandratura — un ufficio tecnico CAD/CAM avanzato e dal 2017 la qualifica di <strong>Centro Hardox Autorizzato SSAB</strong>, uno dei pochi in Italia. Da sempre attenti all'ambiente, abbiamo installato <strong>8.000 m² di pannelli fotovoltaici</strong> per una potenza di <strong>500 kW</strong> che alimenta gran parte del nostro fabbisogno.</p>
+      <p class="chi-b" data-en>We operate over <strong>22,000 m² of which 9,000 are covered</strong>, distributed across <strong>two facilities</strong> in Pievesestina di Cesena. Three integrated departments — thermal cutting, bending, calendering — an advanced CAD/CAM technical office, and since 2017 the qualification as <strong>SSAB Authorized Hardox Center</strong>, one of the few in Italy. Always attentive to the environment, we have installed <strong>8,000 m² of photovoltaic panels</strong> for a <strong>500 kW</strong> output that powers a large part of our needs.</p>
+      <div class="chi-img"><div class="img-ph" title="Stabilimento SiderOXY"><div class="img-ph-icon">⬡</div><div class="img-ph-lbl">Stabilimento SiderOXY</div></div></div>
+    </div>
+    <div class="rv d2">
+      <div class="mv"><div class="mvi">◎</div><div><div class="mvt" data-it>Storia</div><div class="mvt" data-en>History</div><div class="mvd" data-it>Dal 1981 un percorso di crescita continua guidato dalla specializzazione tecnica e dall'investimento nelle persone e nei macchinari più avanzati.</div><div class="mvd" data-en>Since 1981, continuous growth driven by technical specialization and investment in people and advanced machinery.</div></div></div>
+      <div class="mv"><div class="mvi">▷</div><div><div class="mvt">Mission</div><div class="mvd" data-it>Offrire lavorazioni di precisione su acciaio con flessibilità, qualità certificata e supporto tecnico attivo in ogni fase della commessa — inclusi i materiali più difficili.</div><div class="mvd" data-en>Deliver precision steel processing with flexibility, certified quality and active technical support throughout every order — including the most challenging materials.</div></div></div>
+      <div class="mv"><div class="mvi">◈</div><div><div class="mvt">Vision</div><div class="mvd" data-it>Diventare il partner tecnologico di riferimento europeo per chi lavora con acciai ad alta resistenza, investendo continuamente in tecnologie e sostenibilità.</div><div class="mvd" data-en>Become the leading European technology partner for high-strength steel applications, with continuous investment in technology and sustainability.</div></div></div>
+      <div class="mv"><div class="mvi">✦</div><div><div class="mvt" data-it>Valori</div><div class="mvt" data-en>Values</div><div class="mvd" data-it>Precisione tecnica, affidabilità dei tempi, trasparenza, rispetto per l'ambiente. Ogni impegno è concreto: 500 kW di fotovoltaico ne sono la prova più tangibile.</div><div class="mvd" data-en>Technical precision, reliable timing, transparency, environmental respect. Every commitment is concrete: 500 kW of solar power is the most tangible proof.</div></div></div>
+      <div class="pf2">
+        <div class="pft" data-it>Perché sceglierci</div><div class="pft" data-en>Why choose us</div>
+        <ul class="pfl">
+          <li data-it><span><strong>Piega acciai fino a S1300</strong> — know-how tecnico e macchine fino a 1.250 ton</span></li>
+          <li data-en><span><strong>Bending steels up to S1300</strong> — technical know-how and machines up to 1,250 ton</span></li>
+          <li data-it><span><strong>Da 1 mm a 300 mm — un solo fornitore</strong> — laser, plasma, ossitaglio integrati</span></li>
+          <li data-en><span><strong>1 mm to 300 mm — single supplier</strong> — laser, plasma, oxycutting integrated</span></li>
+          <li data-it><span><strong>Centro Hardox SSAB dal 2017</strong> — lavorazione certificata acciai antiusura</span></li>
+          <li data-en><span><strong>Hardox SSAB Center since 2017</strong> — certified wear steel processing</span></li>
+          <li data-it><span><strong>Ufficio tecnico CAD/CAM 3D</strong> — dalla progettazione alla consegna</span></li>
+          <li data-en><span><strong>3D CAD/CAM technical office</strong> — from design to delivery</span></li>
+        </ul>
+      </div>
+
+      <!-- BROCHURE DOWNLOAD -->
+      <a href="sideroxy-brochure.pdf" target="_blank" rel="noopener" download class="chi-bro">
+        <div class="chi-bro-l">
+          <div class="chi-bro-tag" data-it>Company Profile · PDF</div><div class="chi-bro-tag" data-en>Company Profile · PDF</div>
+          <div class="chi-bro-t" data-it>Scarica la brochure aziendale</div><div class="chi-bro-t" data-en>Download our company brochure</div>
+          <div class="chi-bro-d" data-it>Specifiche tecniche, parco macchine, settori serviti e referenze. Il documento ufficiale di SiderOXY in versione PDF.</div>
+          <div class="chi-bro-d" data-en>Technical specs, machinery, sectors served and references. The official SiderOXY document in PDF.</div>
+        </div>
+        <div class="chi-bro-r">
+          <div class="chi-bro-icn">⬇</div>
+          <div class="chi-bro-meta" data-it>PDF · ITA / ENG</div><div class="chi-bro-meta" data-en>PDF · IT / EN</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SETTORI SERVITI ═══ -->
+<section class="sett-home" id="settori">
+  <div class="sett-home-h">
+    <div>
+      <div class="stag rv" data-it>I nostri settori</div><div class="stag rv" data-en>Our sectors</div>
+      <h2 class="sh rv d1 mb-0"><span data-it>Serviamo i settori<br><span class="r">più esigenti.</span></span><span data-en>We serve the most<br><span class="r">demanding sectors.</span></span></h2>
+    </div>
+    <p class="sp rv d2" data-it>Cinque settori dove la lavorazione lamiera ad alta resistenza fa la differenza. Componenti certificati, materiali tracciabili, tolleranze documentate.</p>
+    <p class="sp rv d2" data-en>Five sectors where high-strength sheet metal processing makes the difference. Certified components, traceable materials, documented tolerances.</p>
+  </div>
+  <div class="sett-home-g">
+    <a class="sc2 rv" href="portfolio.html?filter=movimento-terra"><span class="si" style="display:flex;justify-content:center;width:100%"><img src="assets/img/settori/movimento-terra.png" alt="Crane" style="height:110px;width:auto;display:block" /></span><div class="sn" data-it>Macchine Operatrici e Movimento Terra</div><div class="sn" data-en>Operating Machinery &amp; Earthmoving</div><div class="sd" data-it>Escavatori · Pale · Bulldozer · Componenti antiusura Hardox</div><div class="sd" data-en>Excavators · Loaders · Bulldozers · Hardox wear components</div></a>
+    <a class="sc2 rv d1" href="portfolio.html?filter=oil-gas"><span class="si" style="display:flex;justify-content:center;width:100%"><img src="assets/img/settori/oil-gas.png" alt="Oil Platform" style="height:110px;width:auto;display:block" /></span><div class="sn" data-it>Oil &amp; Gas</div><div class="sn" data-en>Oil &amp; Gas</div><div class="sd" data-it>Flange · Serbatoi · Componenti per pipeline e raffinerie</div><div class="sd" data-en>Flanges · Tanks · Components for pipelines and refineries</div></a>
+    <a class="sc2 rv d2" href="portfolio.html?filter=drilling"><span class="si" style="display:flex;justify-content:center;width:100%"><img src="assets/img/settori/drilling.png" alt="Drilling Tower" style="height:110px;width:auto;display:block" /></span><div class="sn" data-it>Drilling</div><div class="sn" data-en>Drilling</div><div class="sd" data-it>Componenti torri di perforazione · Acciai S690QL · S890QL · S1100</div><div class="sd" data-en>Drilling tower components · S690QL · S890QL · S1100 steels</div></a>
+    <a class="sc2 rv d3" href="portfolio.html?filter=energie-alternative"><span class="si" style="display:flex;justify-content:center;width:100%"><img src="assets/img/settori/energie-alternative.png" alt="Wind and Solar Energy" style="height:110px;width:auto;display:block" /></span><div class="sn" data-it>Energie Alternative</div><div class="sn" data-en>Alternative Energy</div><div class="sd" data-it>Flange torri eoliche · Strutture fotovoltaico · Componenti idroelettrici</div><div class="sd" data-en>Wind tower flanges · Solar structures · Hydropower components</div></a>
+    <a class="sc2 rv d1" href="portfolio.html?filter=strutturale"><span class="si" style="display:flex;justify-content:center;width:100%"><img src="assets/img/settori/strutturale.png" alt="Steel Structure" style="height:110px;width:auto;display:block" /></span><div class="sn" data-it>Strutturale per l'edilizia</div><div class="sn" data-en>Structural Construction</div><div class="sd" data-it>Travi · Piastre · Carpenteria pesante · EN 1090 CE</div><div class="sd" data-en>Beams · Plates · Heavy steelwork · EN 1090 CE</div></a>
+  </div>
+</section>
+
+<!-- ═══ STABILIMENTI ═══ -->
+<section class="stab" id="stabilimenti">
+  <div class="stab-h">
+    <div>
+      <div class="stag rv" data-it>I nostri stabilimenti</div><div class="stag rv" data-en>Our facilities</div>
+      <h2 class="sh rv d1"><span data-it>22.000 m²<br><span class="r">a Cesena.</span></span><span data-en>22,000 sq m<br><span class="r">in Cesena.</span></span></h2>
+    </div>
+    <p class="sp rv d2" data-it>Due stabilimenti integrati a Pievesestina di Cesena: il sito storico del 1981 e l'espansione del 2023. Tutti i reparti operativi a meno di 500 metri uno dall'altro.</p>
+    <p class="sp rv d2" data-en>Two integrated facilities in Pievesestina di Cesena: the historic 1981 site and the 2023 expansion. All operating departments within 500 metres of each other.</p>
+  </div>
+  <div class="stab-g">
+
+    <div class="stab-c">
+      <div class="stab-num">01</div>
+      <div class="stab-tag" data-it>Stabilimento storico</div><div class="stab-tag" data-en>Historic facility</div>
+      <div class="stab-nm">Via Fossalta</div>
+      <div class="stab-ad"><strong>Via Fossalta · 3305</strong>47522 Pievesestina di Cesena (FC)</div>
+      <div class="stab-mt">
+        <div class="stab-mt-i"><div class="stab-mt-v">1981<span></span></div><div class="stab-mt-l" data-it>Anno di apertura</div><div class="stab-mt-l" data-en>Year opened</div></div>
+        <div class="stab-mt-i"><div class="stab-mt-v">12<span>.000 m²</span></div><div class="stab-mt-l" data-it>Superficie totale</div><div class="stab-mt-l" data-en>Total area</div></div>
+      </div>
+      <div class="stab-act" data-it>Reparti operativi</div><div class="stab-act" data-en>Operating departments</div>
+      <ul class="stab-l">
+        <li data-it>Taglio Laser Bevel · 3 linee 12×3 m</li><li data-en>Bevel laser cutting · 3 lines 12×3 m</li>
+        <li data-it>Plasma Bevel · 2 linee fino a 40 mm</li><li data-en>Bevel plasma · 2 lines up to 40 mm</li>
+        <li data-it>Pressopiegatura · 6 macchine fino a 1.250 ton</li><li data-en>Press braking · 6 machines up to 1,250 ton</li>
+        <li data-it>Calandratura · 3 calandre fino a 50 mm</li><li data-en>Rolling · 3 calenders up to 50 mm</li>
+        <li data-it>Sabbiatura e lavorazioni meccaniche</li><li data-en>Sandblasting and machining</li>
+      </ul>
+    </div>
+
+    <div class="stab-c">
+      <div class="stab-num">02</div>
+      <div class="stab-tag" data-it>Espansione 2023</div><div class="stab-tag" data-en>2023 expansion</div>
+      <div class="stab-nm">Via della Cooperazione</div>
+      <div class="stab-ad"><strong>Via della Cooperazione · 447</strong>47522 Pievesestina di Cesena (FC)</div>
+      <div class="stab-mt">
+        <div class="stab-mt-i"><div class="stab-mt-v">2023<span></span></div><div class="stab-mt-l" data-it>Anno di apertura</div><div class="stab-mt-l" data-en>Year opened</div></div>
+        <div class="stab-mt-i"><div class="stab-mt-v">10<span>.000 m²</span></div><div class="stab-mt-l" data-it>Superficie totale</div><div class="stab-mt-l" data-en>Total area</div></div>
+      </div>
+      <div class="stab-act" data-it>Reparti operativi</div><div class="stab-act" data-en>Operating departments</div>
+      <ul class="stab-l">
+        <li data-it>Ossitaglio · 3 linee fino a 300 mm</li><li data-en>Oxycutting · 3 lines up to 300 mm</li>
+        <li data-it>Magazzino lamiere e barre</li><li data-en>Sheet and bar warehouse</li>
+        <li data-it>Logistica e spedizioni</li><li data-en>Logistics and shipping</li>
+        <li data-it>500 kW Fotovoltaico</li><li data-en>500 kW solar power</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="stab-tot">
+    <div class="stab-tot-i"><div class="stab-tot-v">22<span>.000 m²</span></div><div class="stab-tot-l" data-it>Superficie totale</div><div class="stab-tot-l" data-en>Total area</div></div>
+    <div class="stab-tot-sep"></div>
+    <div class="stab-tot-i"><div class="stab-tot-v">9<span>.000 m²</span></div><div class="stab-tot-l" data-it>di cui coperti</div><div class="stab-tot-l" data-en>covered area</div></div>
+    <div class="stab-tot-sep"></div>
+    <div class="stab-tot-i"><div class="stab-tot-v">2<span></span></div><div class="stab-tot-l" data-it>Stabilimenti</div><div class="stab-tot-l" data-en>Facilities</div></div>
+  </div>
+
+  <div class="stab-map-w rv">
+    <div class="stab-map-tag" data-it>La nostra posizione</div><div class="stab-map-tag" data-en>Our location</div>
+    <div class="stab-map" id="stabMap" aria-label="Mappa stabilimenti SiderOXY">
+      <!-- Pin labels overlaid on the map (visible above Leaflet tiles or on the CSS-cartina fallback) -->
+      <div class="stab-map-pins">
+        <div class="stab-map-pin">
+          <div class="stab-map-pin-dot"></div>
+          <div>
+            <div class="stab-map-pin-txt">01 — Via Fossalta</div>
+            <div class="stab-map-pin-sub" data-it>Storico · 12.000 m²</div><div class="stab-map-pin-sub" data-en>Historic · 12,000 m²</div>
+          </div>
+        </div>
+        <div class="stab-map-pin">
+          <div class="stab-map-pin-dot"></div>
+          <div>
+            <div class="stab-map-pin-txt">02 — Via della Cooperazione</div>
+            <div class="stab-map-pin-sub" data-it>Espansione 2023 · 10.000 m²</div><div class="stab-map-pin-sub" data-en>2023 expansion · 10,000 m²</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Address cards below the map: production plants only.
+         Registered office is intentionally not displayed in this section
+         — it remains in the footer / legal info. -->
+    <div class="stab-addr-g">
+      <div class="stab-addr-c">
+        <div class="stab-addr-num">01 · <span data-it>Stabilimento storico</span><span data-en>Historic facility</span></div>
+        <div class="stab-addr-tag">Via Fossalta</div>
+        <div class="stab-addr-line"><strong>Via Fossalta, 3305</strong><br>47522 Pievesestina di Cesena (FC)<br>Tel. 0547 317272 · Fax 0547 317518</div>
+      </div>
+      <div class="stab-addr-c">
+        <div class="stab-addr-num">02 · <span data-it>Espansione 2023</span><span data-en>2023 expansion</span></div>
+        <div class="stab-addr-tag">Via della Cooperazione</div>
+        <div class="stab-addr-line"><strong>Via della Cooperazione, 447</strong><br>47522 Pievesestina di Cesena (FC)</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- ════════════════ SHARED FOOTER — keep in sync across pages ════════════════ -->
+<footer style="padding:0;overflow:hidden">
+  <div class="fg" style="display:grid;grid-template-columns:1.1fr 1fr 1.1fr 1fr;gap:0;border-top:1px solid var(--d4)">
+
+    <!-- COL 1: Brand + tagline + social + brochure -->
+    <div style="padding:52px 40px;border-right:1px solid var(--d4)">
+      <a class="brand-logo-footer" href="index.html" style="display:inline-block;max-width:200px">
+        <img src="assets/img/logo-sideroxy-footer.png" alt="SiderOXY · Cut & Bend by Siderflange" style="width:100%;height:auto;display:block">
+      </a>
+      <div class="ftag" style="margin-top:16px" data-it>Specialisti nella lavorazione lamiera dal 1981. Taglio, piega, calandratura e Hardox per i settori più esigenti.</div>
+      <div class="ftag" style="margin-top:16px" data-en>Sheet metal processing specialists since 1981. Cutting, bending, rolling and Hardox for the most demanding sectors.</div>
+      <div class="fso" style="margin-top:24px">
+        <a class="fsi" href="https://www.linkedin.com" target="_blank" rel="noopener">in</a>
+        <a class="fsi" href="https://www.youtube.com" target="_blank" rel="noopener">▶</a>
+      </div>
+      <a href="sideroxy-brochure.pdf" target="_blank" rel="noopener" download style="display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:11px 18px;background:rgba(192,21,12,.1);border:1px solid rgba(192,21,12,.4);color:var(--white);font-family:var(--D);font-size:13px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:.25s"><span style="font-size:14px">⬇</span><span data-it>Scarica la brochure</span><span data-en>Download brochure</span></a>
+      <div style="margin-top:32px;border-top:1px solid var(--d4);padding-top:24px">
+        <div class="legal-lbl" style="font-size:9px;margin-bottom:10px">ISO 9001:2015 · EN 1090 CE</div>
+        <div class="legal-lbl legal-lbl--g" style="font-size:9px;margin-bottom:0">Hardox Authorized · SSAB · dal 2017</div>
+      </div>
+    </div>
+
+    <!-- COL 2: Quick navigation -->
+    <div style="padding:52px 40px;border-right:1px solid var(--d4)">
+      <div class="fct" data-it>Naviga</div>
+      <div class="fct" data-en>Browse</div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;font-size:13px">
+        <li><a href="azienda.html" style="color:var(--g3);text-decoration:none" data-it>Azienda</a><a href="azienda.html" style="color:var(--g3);text-decoration:none" data-en>Company</a></li>
+        <li><a href="lavorazioni.html" style="color:var(--g3);text-decoration:none" data-it>Lavorazioni</a><a href="lavorazioni.html" style="color:var(--g3);text-decoration:none" data-en>Services</a></li>
+        <li style="padding-left:14px"><a href="macchine.html#taglio" style="color:var(--g2);text-decoration:none;font-size:12px">— <span data-it>Taglio</span><span data-en>Cutting</span></a></li>
+        <li style="padding-left:14px"><a href="macchine.html#piega" style="color:var(--g2);text-decoration:none;font-size:12px">— <span data-it>Piega</span><span data-en>Bending</span></a></li>
+        <li style="padding-left:14px"><a href="macchine.html#calandratura" style="color:var(--g2);text-decoration:none;font-size:12px">— <span data-it>Calandratura</span><span data-en>Rolling</span></a></li>
+        <li style="padding-left:14px"><a href="macchine.html#extra" style="color:var(--g2);text-decoration:none;font-size:12px">— Extra</a></li>        <li><a href="macchine.html" style="color:var(--g3);text-decoration:none" data-it>Macchine</a><a href="macchine.html" style="color:var(--g3);text-decoration:none" data-en>Machines</a></li>
+        <li><a href="materiali.html" style="color:var(--g3);text-decoration:none" data-it>Materiali</a><a href="materiali.html" style="color:var(--g3);text-decoration:none" data-en>Materials</a></li>
+        <li><a href="qualita.html" style="color:var(--g3);text-decoration:none" data-it>Qualità</a><a href="qualita.html" style="color:var(--g3);text-decoration:none" data-en>Quality</a></li>
+        <li><a href="portfolio.html" style="color:var(--g3);text-decoration:none">Portfolio</a></li>
+        <li><a href="contatti.html" style="color:var(--g3);text-decoration:none" data-it>Contatti</a><a href="contatti.html" style="color:var(--g3);text-decoration:none" data-en>Contacts</a></li>
+      </ul>
+    </div>
+
+    <!-- COL 3: Contacts + sites -->
+    <div style="padding:52px 40px;border-right:1px solid var(--d4)">
+      <div class="fct" data-it>Contatti</div>
+      <div class="fct" data-en>Contacts</div>
+      <div class="fc"><strong data-it>Sede legale</strong><strong data-en>Head office</strong>Via Ivanoe Bonomi, 160<br>47522 Pievesestina di Cesena (FC)<br>Tel. 0547 317903</div>
+      <div class="fc"><strong data-it>Stabilimento 1 · Storico</strong><strong data-en>Plant 1 · Historic</strong>Via Fossalta, 3305<br>Tel. 0547 317272 · Fax 0547 317518</div>
+      <div class="fc"><strong data-it>Stabilimento 2 · Ossitaglio</strong><strong data-en>Plant 2 · Oxycutting</strong>Via della Cooperazione, 447</div>
+      <div class="fc"><strong>Email</strong><a href="mailto:siderflange@siderflange.it" style="color:var(--white);text-decoration:none">siderflange@siderflange.it</a></div>
+    </div>
+
+    <!-- COL 4: Compliance & secondary links -->
+    <div style="padding:52px 40px">
+      <div class="fct" data-it>Compliance &amp; Risorse</div>
+      <div class="fct" data-en>Compliance &amp; Resources</div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;font-size:13px">
+        <li><a href="whistleblowing.html" style="color:var(--g3);text-decoration:none">Whistleblowing</a></li>
+        <li><a href="contatti.html#lavora-con-noi" style="color:var(--g3);text-decoration:none" data-it>Lavora con noi</a><a href="contatti.html#lavora-con-noi" style="color:var(--g3);text-decoration:none" data-en>Careers</a></li>
+        <li><a href="azienda.html#stabilimenti" style="color:var(--g3);text-decoration:none" data-it>Stabilimenti</a><a href="azienda.html#stabilimenti" style="color:var(--g3);text-decoration:none" data-en>Facilities</a></li>
+        <li><a href="materiali.html#hardox" style="color:var(--g3);text-decoration:none">Hardox SSAB</a></li>
+        <li><a href="sideroxy-brochure.pdf" target="_blank" rel="noopener" style="color:var(--g3);text-decoration:none" data-it>Brochure PDF</a><a href="sideroxy-brochure.pdf" target="_blank" rel="noopener" style="color:var(--g3);text-decoration:none" data-en>Brochure PDF</a></li>
+      </ul>
+      <div style="margin-top:24px;border-top:1px solid var(--d4);padding-top:16px;display:flex;flex-direction:column;gap:8px;font-size:12px">
+        <a href="#" style="color:var(--g2);text-decoration:none">Privacy Policy</a>
+        <a href="#" style="color:var(--g2);text-decoration:none">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATI LEGALI / FISCALI STRIP -->
+  <div style="padding:22px 40px;border-top:1px solid var(--d4);background:var(--black);display:grid;grid-template-columns:repeat(4,1fr);gap:24px;font-size:10.5px;color:var(--g2);line-height:1.55">
+    <div>
+      <div class="legal-lbl" data-it>Ragione sociale</div>
+      <div class="legal-lbl" data-en>Company name</div>
+      <strong style="color:var(--white);font-weight:600">Siderflange S.r.l.</strong>
+    </div>
+    <div>
+      <div class="legal-lbl">P. IVA / C.F.</div>
+      01303360406
+    </div>
+    <div>
+      <div class="legal-lbl">REA</div>
+      FO — 186472
+    </div>
+    <div>
+      <div class="legal-lbl" data-it>Capitale sociale</div>
+      <div class="legal-lbl" data-en>Share capital</div>
+      € 100.000 i.v.
+    </div>
+  </div>
+
+  <div class="fbot" style="margin:0;padding:18px 40px;border-top:1px solid var(--d4)">
+    <span>© 2025 Siderflange S.r.l. — <span data-it>Tutti i diritti riservati</span><span data-en>All rights reserved</span></span>
+    <div class="fcc">
+      <div class="fcp">ISO 9001:2015</div>
+      <div class="fcp">EN 1090 — CE</div>
+      <div class="fcp">Hardox Authorized</div>
+      <div class="fcp">500 kW FV</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie banner -->
+<div class="cookie" id="cookie">
+  <p data-it>Utilizziamo cookie tecnici per il corretto funzionamento del sito. Nessun cookie di profilazione o terze parti. <a href="#" style="color:var(--red)">Privacy policy</a></p>
+  <p data-en>We use technical cookies for proper site operation. No profiling or third-party cookies. <a href="#" style="color:var(--red)">Privacy policy</a></p>
+  <div class="cookie-btns">
+    <button class="ck-acc" onclick="closeCookie()" data-it>Accetto</button>
+    <button class="ck-acc" onclick="closeCookie()" data-en>Accept</button>
+    <button class="ck-rej" onclick="closeCookie()" data-it>Rifiuto</button>
+    <button class="ck-rej" onclick="closeCookie()" data-en>Decline</button>
+  </div>
+</div>
+
+<!-- GSAP for animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Leaflet for stabilimenti map -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Main JS (shared) -->
+<script src="assets/js/main.js"></script>
+<!-- Map JS -->
+<script src="assets/js/map.js"></script>
+
+</body>
+</html>
